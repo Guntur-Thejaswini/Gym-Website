@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon"
+        href="https://static.vecteezy.com/system/resources/previews/008/482/543/non_2x/initial-f-monogram-alphabet-with-a-barbell-lifting-logo-design-logo-for-bodybuilding-free-vector.jpg"
+        type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,
+    700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>University Website</title>
+</head>
+
+<body>
+
+    <!-----------header------------------->
+
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img
+                    src="https://tse3.mm.bing.net/th/id/OIP.zqCXSZg3HJ42c0ELibBHmAHaFQ?rs=1&pid=ImgDetMain&o=7&rm=3"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li> <a href="index.html">HOME</a></li>
+                    <li> <a href="about.html">ABOUT</a></li>
+                    <li> <a href="club.html">CLUB</a></li>
+                    <li> <a href="blog.html">BLOG</a></li>
+                    <li> <a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Contact Us!</h1>
+    </section>
+
+
+    <!-----------contact------------------->
+
+    <section class="contact-us">
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="fa fa-home"></i>
+                    <span>
+                        <h5>1021,16th main Road , Aicobo Nagar </h5>
+                        <P>BTM Layout,Bangaloore, India</P>
+                    </span>
+                </div>
+
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <span>
+                        <h5>+91 9032637605</h5>
+                        <P>Monday To Saturday, 6:30 AM To 10:00 PM</P>
+                    </span>
+                </div>
+
+                <div>
+                    <i class="fa fa-envelope-o"></i>
+                    <span>
+                        <h5>info@Fitness.com</h5>
+                        <P>Email For Any Problems</P>
+                    </span>
+                </div>
+            </div>
+            <div class="contact-col">
+                <form action="mail.php" method="post">
+                    <input type="text" name="name" placeholder="Enter Your Name" required>
+                    <input type="email" name="email" placeholder="Enter Your Email Address" required>
+                    <textarea rows="8" placeholder="Message" name="message" required></textarea>
+                    <button type="submit" class="click-btn red-btn">Send Message</button>
+                </form>
+            </div>
+
+
+        </div>
+    </section>
+
+
+    <!-----------footer------------------->
+
+    <section class="footer">
+        <h4>CONTACT US!</h4>
+        <p>WAVES GYM: A 20-YEAR FITNESS LEGACY<br>
+            Celebrating two decades of exceptional fitness, Waves Gym stands proudly at the forefront of wellness in the
+            vibrant core. Spanning an impressive 10,000 sq.ft., our facility marks a significant milestone in the
+            landscape of standalone boutique gyms.</p>
+        <div class="icons">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-linkedin"></i>
+            <i class="fab fa-whatsapp"></i>
+        </div>
+        <p><i class="fa fa-heart-o"></i>2025 Fitness & Health Pvt. Ltd. All Rights Reserved.</p>
+    </section>
+    <!-----------javascript------------------->
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+
+
+    </script>
+</body>
+
+</html>
